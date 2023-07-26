@@ -75,13 +75,4 @@ class ClienteControllerTest {
         assertThat(controller.obtenerDatosCliente(tipoDocumento, numeroDocumento).getStatusCode())
                 .isEqualTo(HttpStatus.NO_CONTENT);
     }
-
-
-    /*@Test
-    void obtenerDatosClienteException() throws ClienteValidacionException, ClienteException {
-        Mockito.doThrow(new Exception("Error")).when(service).obtenerDatosCliente(tipoDocumento, numeroDocumento);
-        assertThat(controller.obtenerDatosCliente(tipoDocumento, numeroDocumento).getStatusCode())
-                .isEqualTo(HttpStatus.INTERNAL_SERVER_ERROR);
-
-    }*/
 }
